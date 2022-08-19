@@ -12,14 +12,15 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
-        android:src="@drawable/iconcat" />
+        android:src="@drawable/iconcat"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuário"
+        android:text="@string/usu_rio"
         android:textAllCaps="true"
-        android:textColor="#000"
+        android:textColor="@color/corTitulo"
         android:textSize="25sp"
         android:textStyle="bold" />
 
@@ -27,36 +28,41 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:hint="Insira o usuário"
+        android:hint="@string/insira_o_usu_rio"
         android:inputType="textEmailAddress"
-        android:maxLength="100" />
+        android:maxLength="100"
+        tools:ignore="TouchTargetSizeCheck"
+        android:autofillHints="" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Senha"
+        android:text="@string/senha"
         android:textAllCaps="true"
-        android:textColor="#000"
+        android:textColor="@color/corTitulo"
         android:textSize="25sp"
         android:textStyle="bold" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Insira a senha"
+        android:hint="@string/insira_a_senha"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
-        android:maxLength="100" />
+        android:maxLength="100"
+        android:textColorHint="#78909C"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrar" />
+        android:text="@string/entrar" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sair" />
+        android:text="@string/sair" />
 
 
 </LinearLayout>
