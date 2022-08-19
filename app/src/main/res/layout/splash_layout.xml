@@ -4,18 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     tools:context=".SplashActivity">
 
-    <ImageView
-        android:id="@+id/imgGato"
+    <TextView
+        android:id="@+id/txtTextoA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/iconcat" />
+        android:text="Texto A"
+        android:textColor="@color/corTitulo"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/txtTitulo"
+        android:id="@+id/txtTextoB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pets Love" />
+        android:text="Texto B"
+        android:layout_toRightOf="@id/txtTextoA"
+        android:textColor="#1E8E12"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTextoC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto C"
+        android:layout_below="@id/txtTextoB"
+        android:textColor="#8E1235"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtTextoD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto D"
+        android:layout_toRightOf="@id/txtTextoC"
+        android:layout_below="@id/txtTextoB"
+        android:textColor="#8E6F12"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>
